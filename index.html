@@ -3,15 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Proverbs Foundation Assessment | Light Based Leadership</title>
+
+<title>Ancient Intelligence Audit | Steve Lewey</title>
+
+<meta name="description" content="The Ancient Intelligence Audit is a practical self-assessment rooted in the wisdom of Proverbs for examining how you make decisions, lead, work, and relate.">
+
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #1A1410 0%, #2C1F0E 100%);
+  background: linear-gradient(135deg, #1B2A4A 0%, #2C3E5C 100%);
   min-height: 100vh;
   padding: 20px;
+  color: #24304A;
 }
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -20,69 +31,182 @@ body {
   box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   padding: 40px;
 }
-h1 { color: #1A1410; font-size: 2.2em; margin-bottom: 10px; text-align: center; }
-.subtitle { color: #666; text-align: center; margin-bottom: 30px; font-style: italic; }
+
 .brand-line {
   text-align: center;
   font-size: 0.85em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.10em;
   color: #C9A84C;
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-family: 'Georgia', serif;
 }
+
+h1 {
+  color: #1B2A4A;
+  font-size: 2.35em;
+  line-height: 1.15;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
 .intro {
   background: #FAF6EF;
-  padding: 20px;
+  padding: 24px;
   border-left: 4px solid #C9A84C;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  line-height: 1.7;
 }
+
+.intro strong {
+  color: #1B2A4A;
+}
+
+.section-intro {
+  text-align: center;
+  color: #555;
+  line-height: 1.7;
+  margin: -10px auto 30px;
+  max-width: 680px;
+}
+
 .pillar-section {
   margin-bottom: 40px;
   padding-bottom: 30px;
   border-bottom: 2px solid #e0e0e0;
 }
-.pillar-section:last-of-type { border-bottom: none; }
-.pillar-title { color: #1A1410; font-size: 1.5em; margin-bottom: 10px; }
+
+.pillar-section:last-of-type {
+  border-bottom: none;
+}
+
+.pillar-title {
+  color: #1B2A4A;
+  font-size: 1.5em;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
 .pillar-definition {
   color: #666;
   font-style: italic;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 22px;
+  padding: 12px 15px;
   background: #FAF6EF;
+  border-radius: 4px;
+  line-height: 1.6;
 }
-.question { margin-bottom: 25px; }
-.question-text { margin-bottom: 10px; color: #333; font-weight: 500; }
-.radio-group { display: flex; gap: 15px; flex-wrap: wrap; }
-.radio-option { display: flex; align-items: center; gap: 5px; }
-input[type="radio"] { width: 18px; height: 18px; cursor: pointer; }
-label { cursor: pointer; }
+
+.question {
+  margin-bottom: 25px;
+}
+
+.question-text {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.radio-group {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #C9A84C;
+}
+
+label {
+  cursor: pointer;
+  color: #444;
+}
+
+.scale-note {
+  color: #777;
+  font-size: 0.9em;
+  margin-top: 6px;
+}
+
 .submit-btn {
-  background: #1A1410;
+  background: #1B2A4A;
   color: #C9A84C;
   border: none;
-  padding: 15px 40px;
+  padding: 16px 40px;
   font-size: 1.1em;
   border-radius: 6px;
   cursor: pointer;
   display: block;
-  margin: 30px auto;
+  margin: 35px auto;
   transition: background 0.3s;
   font-family: 'Georgia', serif;
   letter-spacing: 0.04em;
 }
-.submit-btn:hover { background: #2C1F0E; }
-#results { display: none; margin-top: 30px; }
-.results-container { background: #FAF6EF; padding: 30px; border-radius: 8px; }
-.total-score { text-align: center; margin-bottom: 30px; }
-.score-number { font-size: 3em; color: #1A1410; font-weight: bold; }
-.category { font-size: 1.5em; color: #C9A84C; margin-top: 10px; }
+
+.submit-btn:hover {
+  background: #2C3E5C;
+}
+
+#results {
+  display: none;
+  margin-top: 30px;
+}
+
+.results-container {
+  background: #FAF6EF;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.results-intro {
+  text-align: center;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.total-score {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.score-number {
+  font-size: 3em;
+  color: #1B2A4A;
+  font-weight: bold;
+}
+
+.category {
+  font-size: 1.45em;
+  color: #C9A84C;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 .pillar-scores {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-bottom: 30px;
 }
+
 .pillar-score {
   background: white;
   padding: 20px;
@@ -90,361 +214,1081 @@ label { cursor: pointer; }
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.pillar-score h3 { color: #1A1410; margin-bottom: 10px; font-size: 1em; }
-.pillar-score .score { font-size: 2em; color: #C9A84C; font-weight: bold; }
+
+.pillar-score h3 {
+  color: #1B2A4A;
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.3;
+}
+
+.pillar-score .score {
+  font-size: 2em;
+  color: #C9A84C;
+  font-weight: bold;
+}
+
 .interpretation {
   background: white;
-  padding: 20px;
+  padding: 22px;
   border-radius: 8px;
   margin-bottom: 20px;
   border-left: 4px solid #C9A84C;
 }
-.interpretation h3 { color: #1A1410; margin-bottom: 10px; }
-.interpretation p { color: #444; line-height: 1.7; }
+
+.interpretation h3 {
+  color: #1B2A4A;
+  margin-bottom: 10px;
+}
+
+.interpretation p {
+  color: #444;
+  line-height: 1.7;
+}
+
 .weakest-pillar {
   background: white;
-  border-left: 4px solid #1A1410;
-  padding: 20px;
+  border-left: 4px solid #1B2A4A;
+  padding: 22px;
   border-radius: 8px;
   margin-top: 20px;
 }
-.weakest-pillar h3 { color: #1A1410; margin-bottom: 10px; }
-.weakest-pillar p { color: #444; line-height: 1.7; }
+
+.weakest-pillar h3 {
+  color: #1B2A4A;
+  margin-bottom: 10px;
+}
+
+.weakest-pillar p {
+  color: #444;
+  line-height: 1.7;
+}
+
 .community-note {
   background: white;
   border-left: 4px solid #C9A84C;
-  padding: 20px;
+  padding: 22px;
   border-radius: 8px;
   margin-top: 20px;
 }
-.community-note h3 { color: #1A1410; margin-bottom: 10px; }
-.community-note p { color: #444; line-height: 1.7; }
+
+.community-note h3 {
+  color: #1B2A4A;
+  margin-bottom: 10px;
+}
+
+.community-note p {
+  color: #444;
+  line-height: 1.7;
+}
+
+.next-step {
+  background: #1B2A4A;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.next-step h3 {
+  color: #C9A84C;
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
+
+.next-step p {
+  color: #FAF6EF;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.next-step-btn {
+  display: inline-block;
+  background: #C9A84C;
+  color: #1B2A4A;
+  text-decoration: none;
+  padding: 13px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.next-step-btn:hover {
+  background: #DCC077;
+}
+
 #email-gate {
   display: none;
-  background: #1A1410;
+  background: #1B2A4A;
   color: white;
   padding: 40px;
   border-radius: 8px;
   text-align: center;
   margin-top: 30px;
 }
-#email-gate h2 { margin-bottom: 15px; font-size: 1.8em; color: #C9A84C; }
-#email-gate p { margin-bottom: 25px; font-size: 1.1em; line-height: 1.6; color: #FAF6EF; }
-#email-gate .ml-form-embedWrapper { margin: 0 auto; }
+
+#email-gate h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  color: #C9A84C;
+}
+
+#email-gate p {
+  margin-bottom: 25px;
+  font-size: 1.05em;
+  line-height: 1.7;
+  color: #FAF6EF;
+}
+
+#email-gate .ml-form-embedWrapper {
+  margin: 0 auto;
+}
+
+.footer-note {
+  text-align: center;
+  color: #888;
+  font-size: 0.85em;
+  line-height: 1.6;
+  margin-top: 35px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 1.9em;
+  }
+
+  .radio-group {
+    gap: 12px;
+  }
+
+  .results-container {
+    padding: 20px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <div class="container">
-  <p class="brand-line">Light Based Leadership</p>
-  <h1>Find out which of the 5 Pillars is quietly running your decisions — in 4 minutes.</h1>
-  <p class="subtitle">The Proverbs Foundation Assessment</p>
+
+  <p class="brand-line">Steve Lewey · Light Based Leadership</p>
+
+  <h1>Ancient Intelligence Audit</h1>
+
+  <p class="subtitle">
+    A practical self-assessment rooted in the wisdom of Proverbs for examining how you make decisions, lead, work, and relate.
+  </p>
 
   <div class="intro">
-    <p><strong>Instructions:</strong> Answer each question honestly using a 1–5 scale:</p>
-    <p style="margin-top: 10px;">
-      <strong>1</strong> = Rarely / Never True<br>
+
+    <p>
+      <strong>Why this audit?</strong>
+    </p>
+
+    <p style="margin-top:10px;">
+      We make hundreds of decisions every week. Some are routine. Others shape our work, relationships, leadership, finances, and future.
+      The Ancient Intelligence Audit is designed to help you step back and see the patterns underneath those decisions.
+    </p>
+
+    <p style="margin-top:10px;">
+      The framework draws on practical wisdom found throughout Proverbs and applies it to the realities of modern life and leadership.
+    </p>
+
+    <p style="margin-top:15px;">
+      <strong>Answer honestly for where you actually are — not where you'd like to be.</strong>
+    </p>
+
+  </div>
+
+  <div class="section-intro">
+
+    <p>
+      Rate each statement from <strong>1 to 5</strong>.
+    </p>
+
+    <p style="margin-top:8px;">
+      <strong>1</strong> = Rarely / Never True &nbsp;&nbsp;·&nbsp;&nbsp;
       <strong>5</strong> = Consistently / Always True
     </p>
-    <p style="margin-top: 10px;"><em>Answer for where you actually are — not where you'd like to be.</em></p>
+
   </div>
 
   <form id="assessment-form"></form>
+
   <div id="results"></div>
 
   <div id="email-gate">
-    <h2>Your Next Step Is Ready</h2>
-    <p>The 21-Day Proverbs Challenge takes the foundation you've just assessed and puts it into practice — one principle, one practice, one day at a time. It's a self-guided course built from 35 years in Proverbs, designed for the marketplace leader who is ready to move from knowing to doing.</p>
 
-    <!-- MailerLite embed form — see notes below the code for required setup -->
+    <h2>Keep Your Results</h2>
+
+    <p>
+      Enter your name and email and we'll send your assessment results along with
+      <strong>Ancient Intelligence Notes</strong> — practical reflections from Proverbs
+      for modern decisions, leadership, business, relationships, and life.
+    </p>
+
+    <!-- Existing MailerLite assessment form.
+         The endpoint and hidden score fields are retained so existing
+         MailerLite automation can continue to receive assessment results. -->
+
     <div id="mlb2-44227632" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-44227632">
+
       <div class="ml-form-align-center">
+
         <div class="ml-form-embedWrapper embedForm">
+
           <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2539447/forms/194247183638202342/subscribe" data-code="" method="post" target="_blank">
+
+            <form
+              class="ml-block-form"
+              action="https://assets.mailerlite.com/jsonp/2539447/forms/194247183638202342/subscribe"
+              data-code=""
+              method="post"
+              target="_blank"
+            >
+
               <div class="ml-form-formContent">
+
                 <div class="ml-form-fieldRow">
+
                   <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                    <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Email" autocomplete="email" required style="width:100%;padding:14px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;font-family:'Georgia',serif;">
+
+                    <input
+                      aria-label="email"
+                      aria-required="true"
+                      type="email"
+                      class="form-control"
+                      name="fields[email]"
+                      placeholder="Email"
+                      autocomplete="email"
+                      required
+                      style="width:100%;padding:14px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;font-family:'Georgia',serif;"
+                    >
+
                   </div>
+
                 </div>
+
                 <div class="ml-form-fieldRow ml-last-item">
+
                   <div class="ml-field-group ml-field-name">
-                    <input aria-label="name" type="text" class="form-control" name="fields[name]" placeholder="Name" autocomplete="given-name" style="width:100%;padding:14px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;font-family:'Georgia',serif;">
+
+                    <input
+                      aria-label="name"
+                      type="text"
+                      class="form-control"
+                      name="fields[name]"
+                      placeholder="Name"
+                      autocomplete="given-name"
+                      style="width:100%;padding:14px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;font-family:'Georgia',serif;"
+                    >
+
                   </div>
+
                 </div>
+
               </div>
 
-              <!-- Hidden fields: capture assessment results as MailerLite custom fields.
-                   IMPORTANT: create these custom fields in your MailerLite account first
-                   (Subscribers > Custom Fields) with these exact keys, or MailerLite will
-                   silently ignore them: assessment_score, assessment_category,
-                   weakest_pillar, discernment_score -->
-              <input type="hidden" name="fields[assessment_score]" id="ml-field-total" value="">
-              <input type="hidden" name="fields[assessment_category]" id="ml-field-category" value="">
-              <input type="hidden" name="fields[weakest_pillar]" id="ml-field-weakest" value="">
-              <input type="hidden" name="fields[discernment_score]" id="ml-field-discernment" value="">
+              <!-- Assessment results passed to MailerLite custom fields -->
 
-              <input type="hidden" name="ml-submit" value="1">
+              <input
+                type="hidden"
+                name="fields[assessment_score]"
+                id="ml-field-total"
+                value=""
+              >
+
+              <input
+                type="hidden"
+                name="fields[assessment_category]"
+                id="ml-field-category"
+                value=""
+              >
+
+              <input
+                type="hidden"
+                name="fields[weakest_pillar]"
+                id="ml-field-weakest"
+                value=""
+              >
+
+              <input
+                type="hidden"
+                name="fields[discernment_score]"
+                id="ml-field-discernment"
+                value=""
+              >
+
+              <input
+                type="hidden"
+                name="ml-submit"
+                value="1"
+              >
+
               <div class="ml-form-embedSubmit">
-                <button type="submit" class="primary" style="width:100%;background:#C9A84C;color:#1A1410;border:none;padding:16px 40px;font-size:1.1em;font-weight:bold;border-radius:6px;cursor:pointer;font-family:'Georgia',serif;letter-spacing:0.04em;">Send Me My Full Results &amp; the Challenge</button>
+
+                <button
+                  type="submit"
+                  class="primary"
+                  style="width:100%;background:#C9A84C;color:#1B2A4A;border:none;padding:16px 40px;font-size:1.1em;font-weight:bold;border-radius:6px;cursor:pointer;font-family:'Georgia',serif;letter-spacing:0.02em;"
+                >
+                  Send Me My Results &amp; Ancient Intelligence Notes
+                </button>
+
               </div>
-              <input type="hidden" name="anticsrf" value="true">
+
+              <input
+                type="hidden"
+                name="anticsrf"
+                value="true"
+              >
+
             </form>
+
           </div>
-          <div class="ml-form-successBody row-success" style="display:none;">
+
+          <div
+            class="ml-form-successBody row-success"
+            style="display:none;"
+          >
+
             <div class="ml-form-successContent">
-              <h4 style="color:#C9A84C;">Thank you!</h4>
-              <p style="color:#FAF6EF;">Check your inbox — your full results and the 21-Day Challenge details are on the way.</p>
+
+              <h4 style="color:#C9A84C;">
+                Thank you!
+              </h4>
+
+              <p style="color:#FAF6EF;">
+                Your results and Ancient Intelligence Notes are on the way.
+              </p>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
     <script>
       function ml_webform_success_44227632() {
         var $ = ml_jQuery || jQuery;
+
         $('.ml-subscribe-form-44227632 .row-success').show();
         $('.ml-subscribe-form-44227632 .row-form').hide();
       }
     </script>
-    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
-    <script>fetch("https://assets.mailerlite.com/jsonp/2539447/forms/194247183638202342/takel")</script>
+
+    <script
+      src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519"
+      type="text/javascript">
+    </script>
+
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/2539447/forms/194247183638202342/takel")
+    </script>
+
   </div>
+
+  <p class="footer-note">
+    Ancient Intelligence is a practical framework for applying enduring wisdom
+    to modern decisions, leadership, business, relationships, and life.
+  </p>
+
 </div>
 
+
 <script>
+
 const questions = [
+
   {
     pillar: 1,
-    title: "PILLAR 1: INTEGRITY",
-    subtitle: "Integris Living",
-    definition: "The quality of being whole and undivided — consistent between who you are, what you do, and what you're called to be.",
+
+    title: "AREA 1: INTEGRITY",
+
+    subtitle: "Living Whole",
+
+    definition:
+      "The quality of being whole and undivided — consistent between who you are, what you do, and how you live.",
+
     questions: [
+
       "My business practices align with my deepest values and beliefs.",
+
       "There is no significant gap between my public image and my private reality.",
+
       "The work I do feels consistent with my unique calling and purpose.",
-      "I make business decisions based on principle, not just profit or pressure.",
+
+      "I make important decisions based on principle, not just profit or pressure.",
+
       "My clients and colleagues would describe me as trustworthy and consistent.",
+
       "I don't have to switch between a work-self and a true-self.",
+
       "I feel comfortable being the same person at work, at home, and in my community."
+
     ]
   },
+
+
   {
     pillar: 2,
-    title: "PILLAR 2: INTENTIONALITY",
-    subtitle: "Tilling Your Land",
-    definition: "Deliberately cultivating your unique field — your experiences, skills, and calling — instead of chasing every opportunity or being pulled off course.",
+
+    title: "AREA 2: INTENTIONALITY",
+
+    subtitle: "Cultivating Your Field",
+
+    definition:
+      "Deliberately cultivating your unique field — your experience, skills, responsibilities, and contribution — instead of chasing every opportunity or being pulled off course.",
+
     questions: [
-      "I have clarity about my unique zone of calling and contribution.",
-      "I regularly evaluate opportunities through the filter: Is this mine to build?",
-      "I say no to good opportunities that aren't aligned with my primary calling.",
-      "I have a clear vision for where I'm going — not just moving through the days.",
+
+      "I have clarity about the contribution I am uniquely positioned to make.",
+
+      "I regularly evaluate opportunities by asking, 'Is this mine to build?'",
+
+      "I say no to good opportunities that aren't aligned with my priorities.",
+
+      "I have a clear sense of where I'm going — not just moving through the days.",
+
       "I invest more time cultivating my strengths than compensating for weaknesses.",
+
       "I'm not distracted by what others are building or achieving.",
-      "I regularly turn down opportunities that would pull me away from my core mission."
+
+      "I regularly turn down opportunities that would pull me away from what matters most."
+
     ]
   },
+
+
   {
     pillar: 3,
-    title: "PILLAR 3: INITIATIVE",
+
+    title: "AREA 3: INITIATIVE",
+
     subtitle: "The Plow Now Principle",
-    definition: "Taking consistent action in every season — not because conditions are perfect, but because faithfulness in the unglamorous moments is what produces the harvest.",
+
+    definition:
+      "Taking consistent action in every season — not because conditions are perfect, but because meaningful results usually come from faithful work over time.",
+
     questions: [
-      "I take action even when I don't feel like it, because I know it's required.",
+
+      "I take action even when I don't feel like it because I know it is required.",
+
       "I don't wait for perfect conditions — I do the work in front of me.",
-      "I consistently maintain the daily disciplines that produce long-term results.",
+
+      "I consistently maintain the disciplines that produce long-term results.",
+
       "I finish what I start rather than leaving a trail of incomplete projects.",
+
       "I'm known for being dependable and diligent.",
+
       "I make progress rather than excuses.",
-      "I take responsibility for my results rather than attributing them to circumstances."
+
+      "I take responsibility for my results rather than attributing them primarily to circumstances."
+
     ]
   },
+
+
   {
     pillar: 4,
-    title: "PILLAR 4: ENVIRONMENT",
+
+    title: "AREA 4: ENVIRONMENT",
+
     subtitle: "The Four Domains",
-    definition: "Designing the contexts and systems that support your provision, protection, community, and calling — because where you operate shapes what you produce.",
+
+    definition:
+      "Paying attention to the environments, systems, relationships, and boundaries that shape what you are able to produce and sustain.",
+
     questions: [
-      "Provision: I have systems in place that generate consistent income and revenue.",
+
+      "Provision: I have systems in place that support consistent income and financial responsibility.",
+
       "Protection: I have healthy boundaries that guard my time, energy, and focus.",
-      "Community: I have a peer group that genuinely challenges and supports my growth.",
-      "Calling: I have positioned myself to serve at the level I am truly called to.",
-      "I invest in creating the right environment rather than just working harder.",
-      "My workspace, schedule, and key relationships support my mission.",
-      "I have deliberately designed my life to align with my deepest calling and purpose."
+
+      "Community: I have people around me who genuinely challenge and support my growth.",
+
+      "Calling: I have positioned myself to contribute at the level I am capable of.",
+
+      "I invest in creating the right environment rather than simply working harder.",
+
+      "My workspace, schedule, and key relationships support what matters most.",
+
+      "I have deliberately designed important parts of my life rather than simply accepting the default."
+
     ]
   },
+
+
   {
     pillar: 5,
-    title: "PILLAR 5: COUNSEL & DISCERNMENT",
+
+    title: "AREA 5: COUNSEL & DISCERNMENT",
+
     subtitle: "Without Counsel, Plans Fail",
-    definition: "Whether you have real people to think decisions through with, confidence that your recent decisions were actually sound, and a reliable way to filter fast tools — including AI — through discernment rather than blind trust.",
+
+    definition:
+      "Developing the judgment to make important decisions well — including knowing when to seek counsel, question assumptions, and verify information before acting.",
+
     questions: [
-      "I have people I regularly bring my hardest business decisions to before I decide, not just after.",
-      "I feel confident that my recent significant decisions were actually sound, not just fast.",
-      "When I use AI tools in my business, I have a reliable way to verify whether what it's telling me is actually right."
+
+      "I have people I regularly bring my hardest decisions to before I decide, not just after.",
+
+      "I feel confident that my recent significant decisions were actually sound, not simply fast.",
+
+      "When I use AI tools, I have a reliable way to evaluate whether what I'm being told is actually right."
+
     ]
   }
+
 ];
 
+
 const form = document.getElementById('assessment-form');
+
 let questionNumber = 1;
 
+
 questions.forEach(pillarData => {
+
   const section = document.createElement('div');
+
   section.className = 'pillar-section';
 
+
   const title = document.createElement('h2');
+
   title.className = 'pillar-title';
-  title.textContent = `${pillarData.title} — ${pillarData.subtitle}`;
+
+  title.textContent =
+    `${pillarData.title} — ${pillarData.subtitle}`;
+
   section.appendChild(title);
 
+
   const def = document.createElement('div');
+
   def.className = 'pillar-definition';
+
   def.textContent = pillarData.definition;
+
   section.appendChild(def);
 
+
   pillarData.questions.forEach(qText => {
+
     const qDiv = document.createElement('div');
+
     qDiv.className = 'question';
 
+
     const qTextDiv = document.createElement('div');
+
     qTextDiv.className = 'question-text';
-    qTextDiv.textContent = `${questionNumber}. ${qText}`;
+
+    qTextDiv.textContent =
+      `${questionNumber}. ${qText}`;
+
     qDiv.appendChild(qTextDiv);
 
+
     const radioGroup = document.createElement('div');
+
     radioGroup.className = 'radio-group';
 
+
     for (let i = 1; i <= 5; i++) {
+
       const radioOption = document.createElement('div');
+
       radioOption.className = 'radio-option';
+
+
       const input = document.createElement('input');
+
       input.type = 'radio';
+
       input.name = `q${questionNumber}`;
+
       input.value = i;
+
       input.id = `q${questionNumber}-${i}`;
+
+
       const label = document.createElement('label');
+
       label.htmlFor = `q${questionNumber}-${i}`;
+
       label.textContent = i;
+
+
       radioOption.appendChild(input);
+
       radioOption.appendChild(label);
+
       radioGroup.appendChild(radioOption);
+
     }
 
+
     qDiv.appendChild(radioGroup);
+
     section.appendChild(qDiv);
+
     questionNumber++;
+
   });
 
+
   form.appendChild(section);
+
 });
 
+
 const submitBtn = document.createElement('button');
+
 submitBtn.type = 'button';
+
 submitBtn.className = 'submit-btn';
+
 submitBtn.textContent = 'Show Me My Results';
+
 submitBtn.onclick = calculateScore;
+
 form.appendChild(submitBtn);
 
+
 function calculateScore() {
+
   let allAnswered = true;
+
+
   for (let i = 1; i <= 31; i++) {
-    const checked = Array.from(document.querySelectorAll(`input[name="q${i}"]`)).some(r => r.checked);
-    if (!checked) { allAnswered = false; break; }
+
+    const checked =
+      Array.from(
+        document.querySelectorAll(`input[name="q${i}"]`)
+      ).some(r => r.checked);
+
+
+    if (!checked) {
+
+      allAnswered = false;
+
+      break;
+
+    }
+
   }
+
+
   if (!allAnswered) {
+
     alert('Please answer all questions before viewing your results.');
+
     return;
+
   }
 
-  let integrityScore = 0, intentionalityScore = 0, initiativeScore = 0, environmentScore = 0, discernmentScore = 0;
-  for (let i = 1; i <= 7; i++) integrityScore += parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
-  for (let i = 8; i <= 14; i++) intentionalityScore += parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
-  for (let i = 15; i <= 21; i++) initiativeScore += parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
-  for (let i = 22; i <= 28; i++) environmentScore += parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
-  for (let i = 29; i <= 31; i++) discernmentScore += parseInt(document.querySelector(`input[name="q${i}"]:checked`).value);
 
-  // Total score and category are based on the original 4 pillars (28 questions, max 140)
-  // so existing thresholds don't need to change. Discernment is tracked separately.
-  const totalScore = integrityScore + intentionalityScore + initiativeScore + environmentScore;
+  let integrityScore = 0;
 
-  let category, interpretation;
+  let intentionalityScore = 0;
+
+  let initiativeScore = 0;
+
+  let environmentScore = 0;
+
+  let discernmentScore = 0;
+
+
+  for (let i = 1; i <= 7; i++)
+    integrityScore += parseInt(
+      document.querySelector(`input[name="q${i}"]:checked`).value
+    );
+
+
+  for (let i = 8; i <= 14; i++)
+    intentionalityScore += parseInt(
+      document.querySelector(`input[name="q${i}"]:checked`).value
+    );
+
+
+  for (let i = 15; i <= 21; i++)
+    initiativeScore += parseInt(
+      document.querySelector(`input[name="q${i}"]:checked`).value
+    );
+
+
+  for (let i = 22; i <= 28; i++)
+    environmentScore += parseInt(
+      document.querySelector(`input[name="q${i}"]:checked`).value
+    );
+
+
+  for (let i = 29; i <= 31; i++)
+    discernmentScore += parseInt(
+      document.querySelector(`input[name="q${i}"]:checked`).value
+    );
+
+
+  /*
+    The primary score remains based on the original
+    four 7-question areas: 28 questions / 140 points.
+
+    Counsel & Discernment is tracked separately:
+    3 questions / 15 points.
+  */
+
+  const totalScore =
+    integrityScore +
+    intentionalityScore +
+    initiativeScore +
+    environmentScore;
+
+
+  let category;
+
+  let interpretation;
+
 
   if (totalScore >= 105) {
-    category = 'WELL-BUILT FOUNDATION';
-    interpretation = "Your framework is largely in place and operating well. What you've built has integrity. The opportunity from here isn't to start over — it's to go deeper, address the remaining gaps, and begin investing in others who are earlier in the journey. Leaders at this level often find that their greatest next return comes from the table they're sitting at, not the work they're doing alone.";
-  } else if (totalScore >= 70) {
+
+    category = 'STRONG FOUNDATION';
+
+    interpretation =
+      "Your responses suggest that many of the practices supporting sound decisions, purposeful work, and healthy leadership are already well established. The opportunity may not be to start over, but to identify the few areas where greater clarity, consistency, or intentionality could make a meaningful difference.";
+
+  }
+
+  else if (totalScore >= 70) {
+
     category = 'FOUNDATION UNDER STRAIN';
-    interpretation = "You have genuine strength in place — and there are areas where the framework is working against you rather than for you. Most leaders here are working harder than necessary because one or two pillars aren't pulling their weight. A focused season of attention on your weakest area tends to produce disproportionate results across everything else.";
-  } else if (totalScore >= 35) {
+
+    interpretation =
+      "You have meaningful strengths in place, along with areas where the way you are currently operating may be creating unnecessary friction. Many people in this range are working harder than necessary because one or two areas aren't supporting the others as well as they could. Paying attention to the areas with the greatest gap may produce disproportionate benefits.";
+
+  }
+
+  else if (totalScore >= 35) {
+
     category = 'FOUNDATION NEEDS ATTENTION';
-    interpretation = "The framework is present but not yet fully installed. You may be experiencing a sense of working hard without clear forward motion — that's usually a sign that effort is outpacing foundation. This is a good moment to slow down, assess honestly, and begin building from the ground up with intention. The 21-Day Proverbs Challenge is a practical place to start.";
-  } else {
-    category = 'TIME TO REBUILD';
-    interpretation = "The foundation needs significant work — and that's not a verdict, it's a starting point. Most leaders who've rebuilt from here say the process was the most clarifying season of their career. The framework exists precisely for this moment. The 21-Day Proverbs Challenge will help you identify where to begin and give you something solid to stand on while the rebuilding happens.";
+
+    interpretation =
+      "Your responses suggest that some important practices are present but not yet consistently established. You may be experiencing a sense of working hard without the clarity or forward movement you want. This can be a useful moment to slow down, examine the patterns honestly, and begin strengthening the areas that matter most.";
+
   }
 
-  const scores = { 'Integrity': integrityScore, 'Intentionality': intentionalityScore, 'Initiative': initiativeScore, 'Environment': environmentScore };
-  let weakestPillar = '', lowestScore = 36;
-  for (const [pillar, score] of Object.entries(scores)) {
-    if (score < lowestScore) { lowestScore = score; weakestPillar = pillar; }
+  else {
+
+    category = 'TIME FOR A RESET';
+
+    interpretation =
+      "Your responses suggest that several foundational areas deserve focused attention. That isn't a verdict — it is useful information. The value of an assessment like this is not the number itself, but the opportunity to identify what may need attention and decide what deserves your next season of effort.";
+
   }
 
-  const weakestExplanations = {
-    'Integrity': "Your Integrity score suggests there may be a gap between how you're operating and how you're wired to operate. That gap doesn't have to be dramatic to be costly — even small misalignments drain energy and erode trust over time. The good news is that integrity gaps, once identified, are among the most resolvable.",
-    'Intentionality': "Your Intentionality score suggests you may be cultivating land that isn't quite yours — or leaving your actual land untilled. Clarity about your unique calling and contribution is the foundation everything else is built on. When that's missing, effort multiplies without proportionate return.",
-    'Initiative': "Your Initiative score suggests a gap between knowing and doing. That gap rarely comes from laziness — it usually comes from waiting for conditions that never quite arrive. The Plow Now Principle exists for exactly this: the harvest doesn't wait for the right moment, and neither should the work.",
-    'Environment': "Your Environment score suggests the systems, relationships, and structures around you may not be supporting your mission as well as they could. Environment is often the last thing leaders examine and the first thing that's actually limiting them. Small changes here tend to have wide impact."
+
+  const scores = {
+
+    'Integrity': integrityScore,
+
+    'Intentionality': intentionalityScore,
+
+    'Initiative': initiativeScore,
+
+    'Environment': environmentScore
+
   };
 
-  let discernmentNote;
-  if (discernmentScore <= 9) {
-    discernmentNote = "This is worth paying attention to. Even strong operators lose sharpness without people to think decisions through with, and without a reliable way to filter fast tools like AI through real discernment. There's no need to solve this today — just notice it.";
-  } else {
-    discernmentNote = "You've got real counsel and discernment working in your favor here — one of the more protective assets any leader can have, and one that's easy to take for granted until it's missing.";
+
+  let weakestPillar = '';
+
+  let lowestScore = 36;
+
+
+  for (const [pillar, score] of Object.entries(scores)) {
+
+    if (score < lowestScore) {
+
+      lowestScore = score;
+
+      weakestPillar = pillar;
+
+    }
+
   }
 
+
+  const weakestExplanations = {
+
+    'Integrity':
+      "Your Integrity score suggests there may be a gap between how you're operating and how you believe you should operate. Even relatively small misalignments can consume energy, complicate decisions, and affect trust. Identifying the gap is the first step toward addressing it.",
+
+    'Intentionality':
+      "Your Intentionality score suggests you may benefit from greater clarity about what is yours to cultivate and what is simply competing for your attention. When priorities are unclear, effort can multiply without producing proportionate results.",
+
+    'Initiative':
+      "Your Initiative score suggests a possible gap between knowing what needs to be done and consistently doing it. That gap isn't necessarily about motivation. Sometimes it is about clarity, structure, timing, or waiting for conditions that may never be perfect.",
+
+    'Environment':
+      "Your Environment score suggests that the systems, relationships, boundaries, or structures around you may not be supporting your priorities as well as they could. Sometimes the answer isn't working harder; it is changing the environment in which the work is being done."
+
+  };
+
+
+  let discernmentNote;
+
+
+  if (discernmentScore <= 9) {
+
+    discernmentNote =
+      "This area may deserve particular attention. Sound decisions rarely happen in isolation. Having people who can help you think clearly — and having a reliable way to question assumptions and verify information, including information produced by AI — can be an important safeguard.";
+
+  }
+
+  else {
+
+    discernmentNote =
+      "Your responses suggest that counsel and discernment are functioning as useful resources. Those assets are easy to take for granted, but they can become especially valuable when decisions carry greater consequences or uncertainty.";
+
+  }
+
+
   document.getElementById('results').innerHTML = `
+
     <div class="results-container">
+
+      <div class="results-intro">
+
+        <p>
+          Your results are not a diagnosis or a judgment.
+          They are simply a snapshot designed to help you notice
+          patterns worth examining.
+        </p>
+
+      </div>
+
+
       <div class="total-score">
-        <div class="score-number">${totalScore}</div>
-        <div style="color:#666; margin-top:4px;">out of 140</div>
-        <div class="category">${category}</div>
+
+        <div class="score-number">
+          ${totalScore}
+        </div>
+
+        <div style="color:#666; margin-top:4px;">
+          out of 140
+        </div>
+
+        <div class="category">
+          ${category}
+        </div>
+
       </div>
+
+
       <div class="pillar-scores">
-        <div class="pillar-score"><h3>Integrity</h3><div class="score">${integrityScore}</div><div style="font-size:0.9em;color:#666;">out of 35</div></div>
-        <div class="pillar-score"><h3>Intentionality</h3><div class="score">${intentionalityScore}</div><div style="font-size:0.9em;color:#666;">out of 35</div></div>
-        <div class="pillar-score"><h3>Initiative</h3><div class="score">${initiativeScore}</div><div style="font-size:0.9em;color:#666;">out of 35</div></div>
-        <div class="pillar-score"><h3>Environment</h3><div class="score">${environmentScore}</div><div style="font-size:0.9em;color:#666;">out of 35</div></div>
-        <div class="pillar-score"><h3>Counsel &amp; Discernment</h3><div class="score">${discernmentScore}</div><div style="font-size:0.9em;color:#666;">out of 15</div></div>
+
+        <div class="pillar-score">
+
+          <h3>Integrity</h3>
+
+          <div class="score">
+            ${integrityScore}
+          </div>
+
+          <div style="font-size:0.9em;color:#666;">
+            out of 35
+          </div>
+
+        </div>
+
+
+        <div class="pillar-score">
+
+          <h3>Intentionality</h3>
+
+          <div class="score">
+            ${intentionalityScore}
+          </div>
+
+          <div style="font-size:0.9em;color:#666;">
+            out of 35
+          </div>
+
+        </div>
+
+
+        <div class="pillar-score">
+
+          <h3>Initiative</h3>
+
+          <div class="score">
+            ${initiativeScore}
+          </div>
+
+          <div style="font-size:0.9em;color:#666;">
+            out of 35
+          </div>
+
+        </div>
+
+
+        <div class="pillar-score">
+
+          <h3>Environment</h3>
+
+          <div class="score">
+            ${environmentScore}
+          </div>
+
+          <div style="font-size:0.9em;color:#666;">
+            out of 35
+          </div>
+
+        </div>
+
+
+        <div class="pillar-score">
+
+          <h3>Counsel &amp; Discernment</h3>
+
+          <div class="score">
+            ${discernmentScore}
+          </div>
+
+          <div style="font-size:0.9em;color:#666;">
+            out of 15
+          </div>
+
+        </div>
+
       </div>
+
+
       <div class="interpretation">
-        <h3>What your score reveals</h3>
-        <p>${interpretation}</p>
+
+        <h3>What Your Score Suggests</h3>
+
+        <p>
+          ${interpretation}
+        </p>
+
       </div>
+
+
       <div class="weakest-pillar">
-        <h3>Your area of greatest opportunity: ${weakestPillar} (${lowestScore}/35)</h3>
-        <p>${weakestExplanations[weakestPillar]}</p>
+
+        <h3>
+          Your Area of Greatest Opportunity:
+          ${weakestPillar}
+          (${lowestScore}/35)
+        </h3>
+
+        <p>
+          ${weakestExplanations[weakestPillar]}
+        </p>
+
       </div>
+
+
       <div class="community-note">
-        <h3>On Counsel &amp; Discernment (${discernmentScore}/15)</h3>
-        <p>${discernmentNote}</p>
+
+        <h3>
+          Counsel &amp; Discernment
+          (${discernmentScore}/15)
+        </h3>
+
+        <p>
+          ${discernmentNote}
+        </p>
+
       </div>
+
+
+      <div class="next-step">
+
+        <h3>
+          Sometimes the Next Step Is a Conversation
+        </h3>
+
+        <p>
+          An assessment can help you see a pattern.
+          A thoughtful conversation can help you explore what the pattern
+          means and what, if anything, you want to do about it.
+        </p>
+
+        <p>
+          If you're working through an important decision, transition,
+          responsibility, or question, you can schedule a brief
+          introductory conversation with Steve.
+        </p>
+
+        <a
+          class="next-step-btn"
+          href="https://calendly.com/steve-lewey/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Schedule a 30-Minute Conversation
+        </a>
+
+      </div>
+
     </div>
+
   `;
 
-  // Pass results into the MailerLite hidden fields before the form is shown
-  document.getElementById('ml-field-total').value = totalScore;
-  document.getElementById('ml-field-category').value = category;
-  document.getElementById('ml-field-weakest').value = weakestPillar;
-  document.getElementById('ml-field-discernment').value = discernmentScore;
 
-  document.getElementById('results').style.display = 'block';
-  document.getElementById('email-gate').style.display = 'block';
-  form.style.display = 'none';
-  document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+  /*
+    Pass assessment results into MailerLite
+    before displaying the email form.
+  */
+
+  document.getElementById('ml-field-total').value =
+    totalScore;
+
+  document.getElementById('ml-field-category').value =
+    category;
+
+  document.getElementById('ml-field-weakest').value =
+    weakestPillar;
+
+  document.getElementById('ml-field-discernment').value =
+    discernmentScore;
+
+
+  document.getElementById('results').style.display =
+    'block';
+
+  document.getElementById('email-gate').style.display =
+    'block';
+
+  form.style.display =
+    'none';
+
+
+  document.getElementById('results').scrollIntoView({
+    behavior: 'smooth'
+  });
+
 }
+
 </script>
+
 </body>
 </html>
